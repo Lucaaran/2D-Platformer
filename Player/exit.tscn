@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwnvd8mwry5o6"]
+
+[ext_resource type="Script" path="res://Levels/Exit.gd" id="1_etn10"]
+[ext_resource type="Texture2D" uid="uid://bf768l2sye4lt" path="res://2D-Platformer/Assets/kenney_pixel-platformer/Tiles/tile_0010.png" id="2_3ki4j"]
+
+[node name="Exit" type="Area2D"]
+position = Vector2(3371, 565)
+script = ExtResource("1_etn10")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_3ki4j")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(9, 9, -9, 9, -9, -9, 9, -9)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

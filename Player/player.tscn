@@ -1,0 +1,92 @@
+[gd_scene load_steps=6 format=3 uid="uid://bi2nc5r1ktoxa"]
+
+[ext_resource type="Script" path="res://2D-Platformer/Player/Player.gd" id="1_hq7ki"]
+[ext_resource type="Texture2D" uid="uid://bxb7fvug0fmae" path="res://2D-Platformer/Assets/kenney_pixel-platformer/Tiles/Characters/tile_0001.png" id="2_potvw"]
+[ext_resource type="Texture2D" uid="uid://by65du5wt7akj" path="res://2D-Platformer/Assets/kenney_pixel-platformer/Tiles/Characters/tile_0000.png" id="3_h5rfw"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_t70hs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_h5rfw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_potvw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_potvw")
+}],
+"loop": true,
+"name": &"Attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_potvw")
+}],
+"loop": true,
+"name": &"Fall",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_h5rfw")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_h5rfw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_potvw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_potvw")
+}],
+"loop": true,
+"name": &"Jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_potvw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_h5rfw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_potvw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_h5rfw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_potvw")
+}],
+"loop": true,
+"name": &"Walk",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_842rp"]
+size = Vector2(20, 23)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_hq7ki")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_t70hs")
+animation = &"Attack"
+autoplay = "Attack"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_842rp")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.5, 1.5)
+position_smoothing_enabled = true
+position_smoothing_speed = 10.0
