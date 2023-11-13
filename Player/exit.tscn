@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dwnvd8mwry5o6"]
 
-[ext_resource type="Script" path="res://Levels/Exit.gd" id="1_etn10"]
+[ext_resource type="Script" path="res://2D-Platformer/Levels/Exit.gd" id="1_etn10"]
 [ext_resource type="Texture2D" uid="uid://bf768l2sye4lt" path="res://2D-Platformer/Assets/kenney_pixel-platformer/Tiles/tile_0010.png" id="2_3ki4j"]
 
 [node name="Exit" type="Area2D"]
