@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dyhdoj8bwe3vr"
-path="res://.godot/imported/tile_0058.png-fde142596d331482c6252920600a7a59.ctex"
+path="res://.godot/imported/tile_0058.png-1120d009c8d5081476a2694afe0d54e9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://2D-Platformer/Assets/kenney_pixel-platformer/Tiles/tile_0058.png"
-dest_files=["res://.godot/imported/tile_0058.png-fde142596d331482c6252920600a7a59.ctex"]
+source_file="res://Assets/kenney_pixel-platformer/Tiles/tile_0058.png"
+dest_files=["res://.godot/imported/tile_0058.png-1120d009c8d5081476a2694afe0d54e9.ctex"]
 
 [params]
 
