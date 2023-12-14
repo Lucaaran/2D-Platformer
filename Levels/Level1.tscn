@@ -2,12 +2,12 @@
 
 [ext_resource type="Texture2D" uid="uid://dvoro4j6co80w" path="res://2D-Platformer/Assets/kenney_pixel-platformer/Tilemap/tilemap-backgrounds.png" id="1_jy8yf"]
 [ext_resource type="Texture2D" uid="uid://qhcyr6u65fwn" path="res://2D-Platformer/Assets/kenney_pixel-platformer/Tilemap/tilemap-backgrounds_packed.png" id="2_4vqjx"]
-[ext_resource type="PackedScene" uid="uid://c6p2acxi14o65" path="res://Enemies/red.tscn" id="4_3qrla"]
+[ext_resource type="PackedScene" uid="uid://c6p2acxi14o65" path="res://2D-Platformer/Enemies/red.tscn" id="4_3qrla"]
 [ext_resource type="TileSet" uid="uid://bud80iwedq5p3" path="res://2D-Platformer/Assets/Level1.tres" id="6_h6g3t"]
 [ext_resource type="PackedScene" uid="uid://dwnvd8mwry5o6" path="res://2D-Platformer/Player/exit.tscn" id="6_irt3v"]
 [ext_resource type="Texture2D" uid="uid://dnygxx4yr0ok3" path="res://2D-Platformer/Assets/kenney_pixel-platformer/Tilemap/tilemap_packed.png" id="7_510mt"]
 [ext_resource type="Script" path="res://2D-Platformer/Player/Player_Container.gd" id="8_1fbcx"]
-[ext_resource type="PackedScene" uid="uid://ckf5x5pwp2qhn" path="res://UI/Menu.tscn" id="8_1qn5q"]
+[ext_resource type="PackedScene" uid="uid://ckf5x5pwp2qhn" path="res://2D-Platformer/UI/Menu.tscn" id="8_1qn5q"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dvenk"]
 texture = ExtResource("1_jy8yf")
